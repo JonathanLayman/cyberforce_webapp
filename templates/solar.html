@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/contact">Contact US</a>
+    <a href="/manufacturing">Manufacturing</a>
+    <a href="/solar" class="active">Solar Generation</a>
+    <a href="/login">Login</a>
+    <a href="/login" class="right">{{ username }}</a>
+</div>
+{% endblock %}
+
+{%  block content %}
+<div class="main">
+    <h2>Solar Generation</h2>
+    <p>
+        We are proud of being the newest addtion to the Vita Vehiculum family and support their manufacturing capabilities
+        with over 15 acres of solar farms throughout the country. Currently our largest farm, Sonnenberg Fields has
+        capabilities of generating approximately 14000 KW/h of electricity. Our mission has always been clean energy and
+        our solar generation efforts are our star in that. Please reach out via the contact us page for mor information regarding
+        utilization.
+    </p>
+</div>
+{%  endblock %}

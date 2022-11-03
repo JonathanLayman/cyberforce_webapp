@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Sole Zon Solis</h1>
+     <p>A <b>better</b> way to harness the sun</p>
+    </div>
+
+    {%  block navbar %}
+
+    {% endblock %}
+
+    {%  block content %}
+
+    {%  endblock %}
+
+
+    <div class="footer">
+        <h2>Vita Vehiculum Logo -- Subscribe to Newsletter -- Contact US/Manufacturing/Solar Generation</h2>
+    </div>
+
+</body>
+</html>

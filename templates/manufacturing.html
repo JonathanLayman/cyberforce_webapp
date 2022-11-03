@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/contact">Contact US</a>
+    <a href="/manufacturing" class="active">Manufacturing</a>
+    <a href="/solar">Solar Generation</a>
+    <a href="/login">Login</a>
+    <a href="/login" class="right">{{ username }}</a>
+</div>
+{% endblock %}
+
+{%  block content %}
+<div class="main">
+    <h2>Manufacturing</h2>
+    <p>
+        Being part of the Vita Vehiculum family means that we support the manufacturing of electric vehicles. Utilizing
+        our solar generation, Vita Vehiculum has build a new electric vehicle manufacturing complex right here at
+        Sonnenburg fields. It procides the capability of building EV in a plant run completely off solar! Much more efficient
+        than any of our competitors! Please reach out via the contact us page for more information regarding our EV
+        manufacturing.
+    </p>
+</div>
+{%  endblock %}

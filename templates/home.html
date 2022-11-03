@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<div class="navbar">
+    <a href="/" class="active">Home</a>
+    <a href="/contact">Contact US</a>
+    <a href="/manufacturing">Manufacturing</a>
+    <a href="/solar">Solar Generation</a>
+    <a href="/login">Login</a>
+    <a href="/login" class="right">{{ username }}</a>
+</div>
+{% endblock %}
+
+{%  block content %}
+<div class="main">
+    <div class="fakeimg" style="height:200px;">Image of Solar Panels</div>
+    <br>
+    <h2>Sonnenberg Fields</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">List of Solar Arrays</div>
+    <br>
+    <div class="fakeimg" style="height:200px;">Power Generation</div>
+</div>
+{%  endblock %}
