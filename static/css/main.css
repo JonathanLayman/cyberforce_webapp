@@ -46,6 +46,13 @@ body {
   float: right;
 }
 
+/* Right-aligned active link*/
+.navbar a.ractive {
+  float: right;
+  background-color: #666;
+  color: white;
+}
+
 /* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;

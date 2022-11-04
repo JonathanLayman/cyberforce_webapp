@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/contact">Contact US</a>
+    <a href="/manufacturing">Manufacturing</a>
+    <a href="/solar">Solar Generation</a>
+    <a href="/user" class="ractive">{{ username }}</a>
+</div>
+{% endblock %}
+
+{%  block content %}
+    <div class="main">
+        <h2>Hello {{ username }} you are an administrator!</h2>
+        <a href="/logout">Logout</a>
+        <br>
+        <h2>FTP Server View</h2>
+        <div class="fakeimg">
+            <ul>
+                {% for file in files %}
+                    <li>{{ file }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <br>
+        <h2>Emails</h2>
+        <div class="fakeimg">
+            <ul>
+                {% for email in emails %}
+                    <li>{{ email }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+{%  endblock %}

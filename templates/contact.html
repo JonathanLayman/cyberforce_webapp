@@ -6,8 +6,11 @@
     <a href="/contact" class="active">Contact US</a>
     <a href="/manufacturing">Manufacturing</a>
     <a href="/solar">Solar Generation</a>
-    <a href="/login">Login</a>
-    <a href="/login" class="right">{{ username }}</a>
+    {%  if username == "" %}
+        <a href="/login" class="right">Login</a>
+    {%  else %}
+        <a href="/user" class="right">{{ username }}</a>
+    {%  endif %}
 </div>
 {% endblock %}
 

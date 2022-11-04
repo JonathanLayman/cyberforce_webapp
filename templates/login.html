@@ -6,11 +6,23 @@
     <a href="/contact">Contact US</a>
     <a href="/manufacturing">Manufacturing</a>
     <a href="/solar">Solar Generation</a>
-    <a href="/login" class="active">Login</a>
-    <a href="/login" class="right">{{ username }}</a>
+    <a href="/login" class="ractive">Login</a>
 </div>
 {% endblock %}
 
 {%  block content %}
-<h2>Login</h2>
+    <div class="container">
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
 {%  endblock %}
