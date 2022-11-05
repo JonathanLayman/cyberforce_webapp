@@ -2,7 +2,9 @@
 
 {% block navbar %}
 <div class="navbar">
-    <a href="/">Home</a>
+    <a href="/" class="navimg">
+        <img src="/static/img/szs_dark.PNG" alt="SZS Logo" width="123" height="39">
+    </a>
     <a href="/contact">Contact US</a>
     <a href="/manufacturing">Manufacturing</a>
     <a href="/solar">Solar Generation</a>
@@ -19,7 +21,7 @@
         <div class="fakeimg">
             <ul>
                 {% for file in files %}
-                    <li>{{ file }}</li>
+                    <li>{{ file }} -- <a href="/download/{{ file }}">Download</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -28,7 +30,12 @@
         <div class="fakeimg">
             <ul>
                 {% for email in emails %}
-                    <li>{{ email }}</li>
+                    <li>Email {{ email }}</li>
+                    <ul>
+                        {% for k, v in emails[email].items() %}
+                            <li>{{ k }}: {{ v }}</li>
+                        {% endfor %}
+                    </ul>
                 {% endfor %}
             </ul>
         </div>

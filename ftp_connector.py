@@ -35,6 +35,13 @@ def ftp_retrieve_contents():
     return data
 
 
+def ftp_download(filename):
+    ftp = ftp_login()
+    ftp.retrbinary(f"RETR {filename}", open(filename, 'wb').write)
+    ftp.close()
+
+
+# ftp_download("test.txt")
 # ftp_upload("files/test2.txt")
 # d = ftp_retrieve_contents()
 

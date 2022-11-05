@@ -10,7 +10,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  /*padding: 80px 0px;*/
   text-align: center;
   background: #1abc9c;
   color: white;
@@ -28,6 +28,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  /*font-size: 20px;*/
 }
 
 /* Style the navigation bar links */
@@ -51,6 +52,11 @@ body {
   float: right;
   background-color: #666;
   color: white;
+}
+
+.navbar a.navimg {
+  padding: 5px 5px;
+  background-color: #666;
 }
 
 /* Change color on hover */
@@ -97,11 +103,17 @@ body {
   padding: 20px;
 }
 
+.main_img {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
+  width: 100%;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -109,6 +121,18 @@ body {
   .row {
     flex-direction: column;
   }
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */

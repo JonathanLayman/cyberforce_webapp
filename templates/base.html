@@ -10,8 +10,7 @@
 <body>
 
     <div class="header">
-        <h1>Sole Zon Solis</h1>
-     <p>A <b>better</b> way to harness the sun</p>
+        <img src="/static/img/szs_big.PNG" alt="szs logo">
     </div>
 
     {%  block navbar %}
@@ -24,7 +23,23 @@
 
 
     <div class="footer">
-        <h2>Vita Vehiculum Logo -- Subscribe to Newsletter -- Contact US/Manufacturing/Solar Generation</h2>
+        <div class="clearfix">
+            <div class="box">
+                <img src="/static/img/vv_logo.PNG" alt="VV Logo" width="308" height="98">
+            </div>
+            <div class="box">
+                Subscribe to Newsletter
+                <br>
+                <input type=text" id="subEmail" name="subEmail" placeholder="email">
+            </div>
+            <div class="box">
+                <a href="/contact">Contact Us</a>
+                <br>
+                <a href="/manufacturing">Manufacturing</a>
+                <br>
+                <a href="/solar">Solar Generation</a>
+            </div>
+        </div>
     </div>
 
 </body>
